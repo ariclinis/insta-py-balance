@@ -7,7 +7,7 @@ pwd = str(input())
 session = InstaPy(username=name, password=pwd)
 session.login()
 
-""" Activity unfollow who dont follow me back"""
+""" Activity unfollow who dont follow me back """
 
 ariclinis_followers = session.grab_followers(username=name, amount="full", live_match=True, store_locally=True)
 ariclinis_following = session.grab_following(username=name, amount="full", live_match=True, store_locally=True)
